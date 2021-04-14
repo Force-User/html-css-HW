@@ -1,0 +1,65 @@
+.header {
+  padding-top: 43px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  z-index: 1;
+  & > .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  &__logo {
+    color: $color-text;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  &-burger {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    overflow: hidden;
+    &__line {
+      width: 100%;
+      box-shadow: 0 0 0.5px 0.5px $color-text;
+      transition: 0.3s;
+    }
+    &__line1 {
+      position: absolute;
+      top: 7px;
+      transition: 0.3s;
+    }
+    &__line2 {
+      width: 50%;
+      transition: 0.3s;
+    }
+    &__line3 {
+      width: 70%;
+      position: absolute;
+      bottom: 7px;
+      transition: 0.3s;
+    }
+
+    &:hover &__line1 {
+      width: 100%;
+      transform: translate(6px, 10px) rotate(45deg);
+    }
+    &:hover &__line2 {
+      transform: translate(-50px);
+    }
+    &:hover &__line3 {
+      width: 100%;
+      transform: translate(6px, -10px) rotate(-45deg);
+    }
+  }
+}
