@@ -1,7 +1,6 @@
 .home {
   position: relative;
   overflow: hidden;
-  padding-bottom: 241px;
   &:before {
     content: "";
     position: absolute;
@@ -44,7 +43,7 @@
     &:before {
       content: "we're";
       position: absolute;
-      top: -31.9%;
+      top: -39.5px;
       left: 42%;
       font-size: 18px;
       background-color: $color-background;
@@ -132,7 +131,7 @@
 
 @media (max-width: 768px) {
   .home__title:before {
-    top: -21.5%;
+    top: -39px;
     left: 41%;
   }
   .home-history > img {

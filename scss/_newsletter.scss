@@ -5,6 +5,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
   &-content {
     &__title {
